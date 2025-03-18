@@ -2,7 +2,7 @@
 import random
 from words import list  # Import word list for the game
 from art import logo, stages  # Import ASCII art for game visuals
-import sys
+
 
 # Set initial number of lives
 lives = 6
@@ -52,7 +52,7 @@ while not game_over:
         # Check if player has lost
         if lives == 0:
             game_over = True
-            print(f"***********************YOU LOSE, THE WORD WAS {your_word} **********************")
+            print(f"***********************YOU LOSE, THE WORD WAS {your_word} *********************")
 
 
 
