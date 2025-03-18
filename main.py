@@ -1,5 +1,6 @@
 # Import necessary libraries
 import random
+import sys
 from words import list  # Import word list for the game
 from art import logo, stages  # Import ASCII art for game visuals
 
@@ -53,6 +54,7 @@ while not game_over:
         if lives == 0:
             game_over = True
             print(f"***********************YOU LOSE, THE WORD WAS {your_word} *********************")
+            sys.exit()
 
 
 
@@ -63,6 +65,7 @@ while not game_over:
     if "_" not in display:
         game_over = True
         print("****************************YOU WIN****************************")
+        sys.exit()
 
 
 
